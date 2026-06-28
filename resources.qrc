@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/piezo_lnapl_manager">
+    <file>icons/icon.png</file>
+  </qresource>
+</RCC>

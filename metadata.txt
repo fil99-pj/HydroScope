@@ -1,0 +1,30 @@
+[general]
+name=HydroScope
+qgisMinimumVersion=3.16
+qgisMaximumVersion=3.99
+description=Strumento di prima interpretazione spaziale di dati piezometrici (falda, LNAPL) per siti contaminati. Non sostituisce la valutazione tecnica di un professionista.
+about=Plugin per trasformare dati di monitoraggio piezometrico (Excel + layer GIS) in layer GIS interpolati: falda, spessore LNAPL, classificazione, isolinee e confronto tra campagne (IDW o Kriging). Pensato come supporto a una PRIMA interpretazione esplorativa dei dati: i risultati dipendono fortemente dai parametri di interpolazione scelti e non sostituiscono l'analisi e il giudizio di un tecnico competente. Sviluppato con l'assistenza di un'intelligenza artificiale (Claude, Anthropic).
+version=1.0.0
+author=Filippo Graziano
+
+; tags are in comma separated value format, spaces are allowed within the
+; tag name.
+; Tags should be in English.
+tags=hydrogeology,groundwater,LNAPL,contaminated sites,piezometer,interpolation,IDW,kriging,variogram,isopach,environmental,monitoring,falda,piezometri
+
+icon=icons/icon.png
+
+; license of the plugin, see https://spdx.org/licenses/ for valid identifiers
+license=MIT
+
+; experimental flag
+experimental=False
+
+; deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+; if true, plugin will only show up in QGIS when the user has enabled the
+; 'show experimental plugins' option
+server=False
+
+category=Plugins
