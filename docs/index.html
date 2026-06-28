@@ -310,6 +310,32 @@
         <p>Un solo file Excel/CSV con anagrafica + campagne, oppure un layer piezometri già esistente + file di sole misure.</p>
       </div>
     </div>
+
+    <h3>IDW o Kriging: quale scegliere</h3>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>IDW — metodo predefinito</h4>
+        <p>
+          Pesa i punti misurati in base alla sola distanza: più un piezometro è
+          vicino, più conta nella stima. Robusto anche con poche stazioni di
+          monitoraggio (caso tipico dei siti contaminati) e non richiede
+          librerie aggiuntive: funziona da subito con la sola installazione
+          standard di QGIS.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h4>Kriging — metodo opzionale</h4>
+        <p>
+          Stima la correlazione spaziale reale dei dati (il <em>variogramma</em>)
+          prima di interpolare, scegliendo automaticamente il modello con
+          l'errore di stima più basso. Più indicato con reti di monitoraggio
+          dense (idealmente 10+ piezometri ben distribuiti). Richiede la
+          libreria Python opzionale <span class="inline-code">pykrige</span>,
+          non incluso nella distribuzione standard di QGIS: va installata a
+          parte (istruzioni nel README) prima di poter scegliere questo metodo.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section>
